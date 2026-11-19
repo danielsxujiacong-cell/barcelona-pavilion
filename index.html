@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151716" />
+    <meta name="description" content="在浏览器中实时观看 Barcelona Pavilion 的日落水景。" />
+    <link rel="icon" href="data:," />
+    <title>Barcelona Pavilion · 日落</title>
+    <script type="module" crossorigin src="./assets/index-IbsGJ3vX.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three.module-RkdUL8uP.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CzgUX4qD.css">
+  </head>
+  <body>
+    <main id="pavilion" aria-label="Barcelona Pavilion 三维日落场景">
+      <div id="stage"></div>
+      <div class="hud">
+        <header class="masthead">
+          <div class="identity">
+            <h1>Barcelona Pavilion</h1>
+            <span class="scene-name">日落</span>
+          </div>
+          <div id="status" class="status" data-mode="loading" role="status" aria-live="polite">
+            <span class="status-light" aria-hidden="true"></span>
+            <span id="status-text">正在加载场景</span>
+            <span id="samples" aria-hidden="true"></span>
+          </div>
+        </header>
+        <div id="notice" class="notice" hidden></div>
+        <footer class="footer">
+          <div class="help">
+            <span>拖动旋转 · 滚轮缩放</span>
+            <details class="credits">
+              <summary>场景署名</summary>
+              <p>建筑设计 Ludwig Mies van der Rohe。原模型及贴图 Claudio Andres。场景、灯光及渲染 Hamza Cheggour。</p>
+              <p>浏览器版本重制了材质、灯光与植被表现。<a href="https://blendswap.com/blend/8762" target="_blank" rel="noreferrer">原工程与 CC BY 许可</a></p>
+            </details>
+          </div>
+          <button id="reset" class="reset" type="button" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4.5 11a7.5 7.5 0 1 1 1.9 5.94M4.5 11V5.5m0 5.5H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            重置视角
+          </button>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
